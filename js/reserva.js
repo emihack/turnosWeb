@@ -84,7 +84,7 @@ $("#btnCalend").click((event) => {
     var diaHora = $(".flatpickr").val();
     localStorage.setItem("turno", diaHora);
     guardarDiaHora.push({turno: diaHora});
-    $(location).attr('href','/DatosReserva.html');
+    $(location).attr('href','./DatosReserva.html');
     event.preventDefault();
 });
 
