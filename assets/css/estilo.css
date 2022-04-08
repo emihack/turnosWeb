@@ -1,0 +1,231 @@
+
+@charset "UTF-8";
+/* PARAMETROS GENERALES */
+* {
+  margin: 0;
+  padding: 0; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* ESTILOS PARA EL PRELOADER*/
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  border: 10px solid #eee;
+  border-top: 10px solid #666;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*ESTILOS PARA EL NAVBAR */
+.navbar a img {
+  margin-left: 20px; }
+  
+
+.modifNavbar a {
+  margin: 0 15px 0 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold; }
+
+/* ESTILO PARA EL TEXTO EN EL INICIO */
+section h3 {
+  text-align: center;
+  padding: 120px 200px; }
+
+/* ESTILOS PARA EL TITULO Y PARRAFOS */
+.tituloPrincipal h6 {
+  margin: 60px 0 60px 0;
+  text-align: center;
+  font-family: "Arial", cursive;
+  font-size: 2rem; }
+
+/* ESTILOS PARA EL CONTENIDO DEL FORMULARIO EN LA PESTAÑA CONTACOS*/
+.modifContenido h6 {
+  margin-bottom: 30px;
+  font-family: "Arial", cursive;
+  font-size: 1.4rem; }
+
+.modifContenido label {
+  font-family: "arial"; }
+
+.modifCalendario {
+  flex-direction: column; }
+
+#btnCalend {
+  margin-top: 10px; }
+
+/* ESTILOS PARA EL MAPA EN LA PESTAÑA CONTACOS */
+.modifMapa {
+  margin: 60px 0 60px 0; }
+
+/* ESTILOS PARA EL FOOTER */
+.footer {
+  background-color: rgba(0, 0, 0, 0.715) !important;
+  padding: 20px 0 5px 0 !important;
+  width: 100%;
+  height: auto; }
+  .footer .iconoRedesSoc {
+    margin-bottom: 40px; }
+    .footer .iconoRedesSoc .iconoInsta {
+      color: white; }
+    .footer .iconoRedesSoc .iconoFace {
+      color: white;
+      margin: 0 20px 0 20px; }
+    .footer .iconoRedesSoc .iconoWhatsapp {
+      color: white; }
+  .footer p {
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+
+/* ESTILOS PARA LA PÁGINA RESERVA */
+.tith6 {
+  margin-bottom: 30px;
+  font-family: "arial", cursive;
+  font-size: 1.4rem; }
+
+.containerDet {
+  width: 230px;
+  border: 5px solid rgb(18, 0, 132);
+  border-radius: 10px; 
+  padding: 10px;
+  text-align: center;
+}
+  .containerDet .divDetalle {
+    font-family: "arial";
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .containerDet .divDetalle h6 {
+      margin-top: 1rem;
+      font-size: 1.2rem; }
+
+.formReserva label {
+  font-family: "arial"; }
+
+.divPrincipalReserva {
+  margin-bottom: 60px; }
+
+/* DISEÑO RESPONSIVE PARA LA VENTANA CONTACTO Y RESERVA */
+@media screen and (max-width: 575px) {
+  .navbar a img {
+    width: 45px;
+    height: 45px; }
+  .modifNavbar a {
+    font-size: 0.9rem; }
+  /* ESTILOS PARA EL TITULO Y PARRAFOS */
+  .tituloPrincipal h6 {
+    font-size: 1.3rem; }
+  .modifContenido {
+    flex-wrap: wrap; }
+    .modifContenido h6 {
+      font-size: 1rem; }
+    .modifContenido label {
+      font-size: 0.9rem; }
+  #btnCalend {
+    margin: 10px 0 30px 0;
+    font-size: 0.9rem; }
+  .field button {
+    font-size: 0.9rem; }
+  .tith6 {
+    font-size: 1rem;
+    margin-top: 50px;
+    text-align: center; }
+  .containerDet .divDetalle {
+    font-size: 0.9rem; }
+    .containerDet .divDetalle h6 {
+      font-size: 0.9rem; }
+  .formReserva label {
+    font-size: 0.9rem; }
+  .divPrincipalReserva {
+    flex-wrap: wrap; }
+  .footer {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .navbar a img {
+    width: 45px;
+    height: 45px; }
+  .modifNavbar a {
+    font-size: 0.9rem; }
+  /* ESTILOS PARA EL TITULO Y PARRAFOS */
+  .tituloPrincipal h6 {
+    font-size: 1.3rem; }
+  .modifContenido {
+    flex-wrap: wrap; }
+    .modifContenido h6 {
+      font-size: 1rem; }
+    .modifContenido label {
+      font-size: 0.9rem; }
+  #btnCalend {
+    margin: 10px 0 30px 0;
+    font-size: 0.9rem; }
+  .field button {
+    font-size: 0.9rem; }
+  .tith6 {
+    font-size: 1rem;
+    margin-top: 50px;
+    text-align: center; }
+  .containerDet .divDetalle {
+    font-size: 0.9rem; }
+    .containerDet .divDetalle h6 {
+      font-size: 0.9rem; }
+  .formReserva label {
+    font-size: 0.9rem; }
+  .divPrincipalReserva {
+    flex-wrap: wrap; }
+  .footer {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar a img {
+    width: 52px;
+    height: 58px; }
+  .modifNavbar a {
+    font-size: 1rem; }
+  /* ESTILOS PARA EL TITULO Y PARRAFOS */
+  .tituloPrincipal h6 {
+    font-size: 1.6rem; }
+  .modifContenido {
+    flex-wrap: wrap; }
+    .modifContenido h6 {
+      font-size: 1.2rem; }
+    .modifContenido label {
+      font-size: 1rem; }
+  #btnCalend {
+    margin: 10px 0 30px 0;
+    font-size: 1rem; }
+  .field button {
+    font-size: 1rem; }
+  .tith6 {
+    font-size: 1.1rem; }
+  .containerDet .divDetalle {
+    font-size: 1rem; }
+    .containerDet .divDetalle h6 {
+      font-size: 1rem; }
+  .formReserva label {
+    font-size: 1rem; }
+  .divPrincipalReserva {
+    flex-wrap: wrap; }
+  .footer {
+    font-size: 1rem; } }

@@ -1,0 +1,23 @@
+[
+    {
+        "formadepago": [
+            "Efectivo", 
+            "Consulta Laboral (gratuita)", 
+            "Débito", 
+            "Crédito", 
+            "Mercado Pago"
+        ]
+    },
+    {
+        "servicios": [
+            "Penal",
+            "Civil",
+            "Laboral",
+            "Familia",
+            "Comercial",
+            "Defensa al consumidor",
+            "Accidente laboral",
+            "Accidente de tránsito"
+        ]
+    }
+]
