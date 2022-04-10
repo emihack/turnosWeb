@@ -8,7 +8,7 @@ $(document).ready(function(){
 const guardarConsulta = [];
 const guardarReserva = [];
 const guardarDiaHora = [];
-const URLJSON = '../js/backend/datos.json';
+const URLJSON = './js/backend/datos.json';
 
 
 
@@ -70,7 +70,7 @@ function escribirFormaPago() {
         if (estado === "success") {
             let misDatos = respuesta;
             for (i = 0; i < misDatos[0].formadepago.length; i++) {
-                $("#selectFormaDePago").append(`<option>${misDatos[0].formadepago[i]}</option>`);
+                $("#selectformadepago").append(`<option>${misDatos[0].formadepago[i]}</option>`);
                 }
             }
         });
@@ -150,7 +150,7 @@ $("#btnReserva").click((event) => {
     var numCel = $("#numCel").val();
     var correo = $("#correo").val();
     var motivo = $("#motivo").val();
-    var formaPago = $("#selectFormaDePago").val();
+    var formaPago = $("#selectformadepago").val();
     var texto = $("#text").val();
     guardarReserva.push({nombre: nomApe, celular: numCel, email: correo, motivo: motivo, formaDePago: formaPago, mensaje: texto});
     $.ajax({
