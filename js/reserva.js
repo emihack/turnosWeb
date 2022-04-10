@@ -8,7 +8,7 @@ $(document).ready(function(){
 const guardarConsulta = [];
 const guardarReserva = [];
 const guardarDiaHora = [];
-const URLJSON = '/js/backend/datos.json';
+const URLJSON = '../js/backend/datos.json';
 
 
 
